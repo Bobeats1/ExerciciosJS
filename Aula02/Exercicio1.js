@@ -1,7 +1,7 @@
 //importando biblioteca
 const leia = require ('readline-sync')
 
-let A, B, C
+let A, B, C, soma
 
 //Entrada de dados
 
@@ -10,6 +10,7 @@ B = leia.questionFloat ("Agora insira o valor B: ")
 C = leia.questionFloat ("Agora insira o valor C: ")
 
 // Processamento de dados e Saída
-if (A + B > C) console.log("A soma A + B é maior que C. ") ;
-else if (A + B < C) console.log ("A soma A + B é menor que C. ") ;
-else if (A + B == C) console.log ("A soma A + B é igual a C. ");
+soma= (A + B)
+if (soma > C) console.log(A, "+", B, "=", soma, "A soma A + B é maior que C. ") ;
+else if (soma < C) console.log (A, "+", B, "=", soma,"A soma A + B é menor que C. ") ;
+else if (soma == C) console.log (A, "+", B, "=", soma,"A soma A + B é igual a C. ");
